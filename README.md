@@ -102,20 +102,28 @@ base_parser.BaseParser._PREPARED_HEADERS
 The list of headers in case they are not in `raw`.
 A header and a field are matched by index.
 
+---
+
 ```py
 base_parser.BaseParser._TRANSLATIONS
 ```
 The dictionary for converting bad headers to good headers.
+
+---
 
 ```py
 base_parser.BaseParser._table_from_raw
 ```
 The method for converting `raw`.
 
+---
+
 ```py
 base_parser.BaseParser._find_headers
 ```
 The method for search of headers in the table.
+
+---
 
 ```py
 decorators.special_field
@@ -123,10 +131,14 @@ decorators.special_field
 The decorator for a field that is not in `_find_fields`.
 You have to provide search and handling of a field.
 
+---
+
 ```py
 decorators.nested_table_field
 ```
 The decorator for a field that contain a nested table.
 This decorator works with a parser class.
+
+---
 
 #### I recommend looking at `_tests.classes` to better understand how to build parser classes.
