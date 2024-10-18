@@ -127,6 +127,6 @@ You have to provide search and handling of field.
 decorators.nested_table_field
 ```
 The decorator for field that contain a nested table.
-This decorator works with a class.
+This decorator works with a parser class.
 
 #### I recommend looking at `_tests.classes` to better understand how to build parser classes.
