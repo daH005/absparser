@@ -1,6 +1,7 @@
 from typing import Callable, Type
 
 from designations import Designation
+from parser_i import ParserI
 
 __all__ = (
     'special_field_handler',
@@ -26,7 +27,7 @@ def special_field(header: str):
 
 
 def nested_table_field(header: str):
-    def wrapper(type_: Type):
+    def wrapper(type_: ParserI):
         setattr(type_, Designation.HEADER, header)
         setattr(type_, Designation.MARK, Designation.NESTED_TABLE_FIELD)
         return type_
