@@ -15,7 +15,7 @@ from base_parser import BaseParser
 from decorators import special_field_handler
 ```
 
-2. Inherit this class and write the types of: raw, table, record, field and field value:
+2. Inherit `BaseParser` and write the types of: raw, table, record, field and field value:
 ```py
 class MyParser(BaseParser[str, str, str, str, int]): ...
 ```
