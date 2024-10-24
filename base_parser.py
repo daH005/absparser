@@ -127,7 +127,7 @@ class BaseParser(ParserI, Generic[RawT, TableT, RecordT, FieldT, FieldValueT], m
     def __init__(self) -> None:
         self.bind({})
 
-    def bind(self, result: dict) -> None:
+    def bind(self, result: ResultT) -> None:
         self._result = result
 
     def parse(self, raw: RawT) -> ResultT:
