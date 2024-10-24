@@ -89,7 +89,7 @@ class TxtTestParser(BaseParser[str, str, str, str, str]):
         return 1
 
     @nested_table_field('Clauses')
-    class ClausesParser(BaseParser[str, str, list, str, str]):
+    class ClausesParser(BaseParser[str, str, str, str, str]):
 
         _TABLE_NAME = 'Clauses'
         _PREPARED_HEADERS = ['Clause']
