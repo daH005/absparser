@@ -1,7 +1,10 @@
 ## About the project
-I once a lot of worked for code for handling difficult non-structured data from many sites. 
+I once a lot of worked for code for handling difficult non-structured data from many sites to save clean data to a SQL-database. 
 It was data from HTML, JSON, plain text and more. 
 In this project I decided to write a library for this task. 
+
+## How to start usage
+Just clone the repository and read on
 
 ## Usage steps using an example:
 0. The raw structure for an example:
